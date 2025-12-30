@@ -1,1 +1,137 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family: "Georgia", serif;
+  background:#000;
+  color:#fff;
+}
+
+/* NAV */
+.nav{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  z-index:10;
+  padding:16px 32px;
+}
+
+.nav-inner{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:rgba(0,0,0,.55);
+  backdrop-filter: blur(10px);
+  border-radius:999px;
+  padding:12px 26px;
+}
+
+.nav a{
+  color:#ccc;
+  text-decoration:none;
+  margin-right:18px;
+  font-size:14px;
+}
+
+.logo{
+  letter-spacing:3px;
+  font-weight:700;
+}
+
+.buy{
+  background:linear-gradient(135deg,#c8a45a,#8d6b2d);
+  padding:8px 18px;
+  border-radius:999px;
+  color:#000 !important;
+  font-weight:600;
+}
+
+/* HERO */
+.hero{
+  min-height:100vh;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:140px 8% 80px;
+  gap:50px;
+
+  /* 🔥 ФОН */
+  background:
+    radial-gradient(900px 500px at 75% 65%, rgba(200,164,90,.18), transparent 60%),
+    linear-gradient(
+      to right,
+      rgba(0,0,0,.95) 0%,
+      rgba(0,0,0,.75) 40%,
+      rgba(0,0,0,.35) 65%,
+      rgba(0,0,0,.1) 100%
+    ),
+    url("img/hero-bg.jpg");
+
+  background-size:cover;
+  background-position:center right;
+  background-repeat:no-repeat;
+}
+
+.hero-content{
+  max-width:520px;
+}
+
+.label{
+  font-size:14px;
+  letter-spacing:1px;
+  color:#c8a45a;
+}
+
+h1{
+  font-size:56px;
+  line-height:1.05;
+  margin:18px 0;
+}
+
+p{
+  color:#bbb;
+  margin-bottom:28px;
+}
+
+.buttons{
+  display:flex;
+  gap:14px;
+  margin-bottom:30px;
+}
+
+.btn{
+  padding:12px 24px;
+  border-radius:999px;
+  font-size:14px;
+  text-decoration:none;
+}
+
+.gold{
+  background:linear-gradient(135deg,#c8a45a,#8d6b2d);
+  color:#000;
+}
+
+.outline{
+  border:1px solid #c8a45a;
+  color:#c8a45a;
+}
+
+.features{
+  display:flex;
+  gap:14px;
+  flex-wrap:wrap;
+  font-size:13px;
+  color:#ccc;
+}
+
+/* PACKS */
+.hero-image img{
+  width:100%;
+  max-width:480px;
+  filter: drop-shadow(0 40px 80px rgba(0,0,0,.9));
+}
 
